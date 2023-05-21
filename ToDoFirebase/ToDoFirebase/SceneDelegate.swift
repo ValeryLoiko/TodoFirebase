@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  ToDoFire Firebase
+//  ToDoFirebase
 //
 //  Created by Diana on 21/05/2023.
 //
