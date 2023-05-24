@@ -70,7 +70,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Va-KT-sg8"/>
-                                                    <segue destination="rvR-8d-HxR" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="Xl3-H4-Zjm"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyQ-Kg-1lC">
@@ -117,6 +116,7 @@
                         <outlet property="emailTextField" destination="6J2-Rt-LTO" id="g8b-bF-YXW"/>
                         <outlet property="passwordTextField" destination="L5W-8A-Yli" id="fua-Rv-qz5"/>
                         <outlet property="validLabel" destination="75C-sq-on9" id="7rh-OS-9px"/>
+                        <segue destination="rvR-8d-HxR" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="Uet-XE-HmF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -144,7 +144,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -163,6 +163,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="Pof-On-UrG">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="7qO-s8-vSl">
+                            <connections>
+                                <action selector="signOutTapped:" destination="Tzh-Eu-WDo" id="nH2-uX-E1P"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zWT-hB-lak">
                             <connections>
                                 <action selector="addAction:" destination="Tzh-Eu-WDo" id="1PV-cU-RXD"/>
@@ -182,6 +187,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rvR-8d-HxR" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="wIi-iL-03g"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oKJ-hy-0uo">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

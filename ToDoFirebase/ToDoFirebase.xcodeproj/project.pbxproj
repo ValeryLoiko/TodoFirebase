@@ -17,6 +17,8 @@
 		84552E222A1A4E42003FF74A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84552E212A1A4E42003FF74A /* GoogleService-Info.plist */; };
 		84552E252A1CB417003FF74A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 84552E242A1CB417003FF74A /* FirebaseAuth */; };
 		84552E272A1CB417003FF74A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 84552E262A1CB417003FF74A /* FirebaseDatabase */; };
+		84552E2A2A1E3959003FF74A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84552E292A1E3959003FF74A /* Task.swift */; };
+		84552E2C2A1E397C003FF74A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84552E2B2A1E397C003FF74A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		84552E192A1A4864003FF74A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84552E1F2A1A4A51003FF74A /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		84552E212A1A4E42003FF74A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84552E292A1E3959003FF74A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		84552E2B2A1E397C003FF74A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +68,10 @@
 		84552E0A2A1A4862003FF74A /* ToDoFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				84552E2D2A1E398B003FF74A /* Model */,
+				84552E282A1E392D003FF74A /* Controllers */,
 				84552E0B2A1A4862003FF74A /* AppDelegate.swift */,
 				84552E0D2A1A4862003FF74A /* SceneDelegate.swift */,
-				84552E0F2A1A4862003FF74A /* LoginViewController.swift */,
-				84552E1F2A1A4A51003FF74A /* TasksViewController.swift */,
 				84552E112A1A4862003FF74A /* Main.storyboard */,
 				84552E142A1A4864003FF74A /* Assets.xcassets */,
 				84552E162A1A4864003FF74A /* LaunchScreen.storyboard */,
@@ -75,6 +79,24 @@
 				84552E212A1A4E42003FF74A /* GoogleService-Info.plist */,
 			);
 			path = ToDoFirebase;
+			sourceTree = "<group>";
+		};
+		84552E282A1E392D003FF74A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84552E0F2A1A4862003FF74A /* LoginViewController.swift */,
+				84552E1F2A1A4A51003FF74A /* TasksViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84552E2D2A1E398B003FF74A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84552E2B2A1E397C003FF74A /* User.swift */,
+				84552E292A1E3959003FF74A /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +180,8 @@
 			files = (
 				84552E102A1A4862003FF74A /* LoginViewController.swift in Sources */,
 				84552E202A1A4A51003FF74A /* TasksViewController.swift in Sources */,
+				84552E2C2A1E397C003FF74A /* User.swift in Sources */,
+				84552E2A2A1E3959003FF74A /* Task.swift in Sources */,
 				84552E0C2A1A4862003FF74A /* AppDelegate.swift in Sources */,
 				84552E0E2A1A4862003FF74A /* SceneDelegate.swift in Sources */,
 			);
